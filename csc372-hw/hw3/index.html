@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dine On Tate Street</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Dine On Tate Street</h1>
+        <p>Discover the best eats just steps away from UNCG’s Petty Building</p>
+    </header>
+
+    <main>
+        <section id="intro">
+            <p>Tate Street is home to some of the best local food spots in Greensboro. Whether you're craving a warm coffee, a fresh slice of pizza, or a quick,  sandwich, theres something for everyone.</p>
+        </section>
+
+        <section id="restaurants">
+            <!-- Jimmy John's -->
+            <article class="restaurant">
+                <h2>Jimmy John’s</h2>
+                <p>📍 411 Tate St. | 🕒 10 am - 2 am | Sandwiches</p>
+                <div class="dish-gallery">
+                    <img src="images/italian.jpg" alt="Italian Night Club" data-name="Italian Night Club" data-price="8.99" data-description="Salami, capicola, ham, provolone, and Italian vinaigrette on fresh-baked bread." onclick="selectDish(this)">
+                    <img src="images/turkeytom.jpg" alt="Turkey Tom" data-name="Turkey Tom" data-price="7.99" data-description="A delicious turkey sandwich with lettuce, tomato, and mayo." onclick="selectDish(this)">
+                    <img src="images/gargantuan.jpg" alt="J.J. Gargantuan" data-name="J.J. Gargantuan" data-price="10.99" data-description="A massive sandwich loaded with salami, capicola, ham, turkey, roast beef, and provolone." onclick="selectDish(this)">
+                </div>
+            </article>
+
+            <!-- New York Pizza -->
+            <article class="restaurant">
+                <h2>New York Pizza</h2>
+                <p>📍 337 Tate St. | 🕒 11 AM - Midnight | New York style Pizza</p>
+                <div class="dish-gallery">
+                    <img src="images/cheesepizza.jpg" alt="Cheese Pizza" data-name="Cheese Pizza" data-price="3.50" data-description="A large slice of cheese on a thin crust." onclick="selectDish(this)">
+                    <img src="images/pepperoni.jpg" alt="Pepperoni Pizza" data-name="Pepperoni Pizza" data-price="3.99" data-description="Classic pepperoni pizza with a crispy crust." onclick="selectDish(this)">
+                    <img src="images/garlicknots.jpg" alt="Garlic Knots" data-name="Garlic Knots" data-price="4.99" data-description="Warm, buttery garlic knots with marinara sauce." onclick="selectDish(this)">
+                </div>
+            </article>
+
+            <!-- Tate Street Coffee House -->
+            <article class="restaurant">
+                <h2>Tate Street Coffee House</h2>
+                <p>📍 334 Tate St. | 🕒 6 AM - 6 PM | Coffee, Sandwiches, Pastries</p>
+                <div class="dish-gallery">
+                    <img src="images/latte.jpg" alt="Latte" data-name="Latte" data-price="4.50" data-description="Smooth espresso with steamed milk and a foam top." onclick="selectDish(this)">
+                    <img src="images/bagelsandwich.jpg" alt="Bagel Sandwich" data-name="Bagel Sandwich" data-price="6.99" data-description="Freshly toasted bagel with egg, cheese, and your choice of protein." onclick="selectDish(this)">
+                    <img src="images/muffin.jpg" alt="Blueberry Muffin" data-name="Blueberry Muffin" data-price="3.50" data-description="Fluffy muffin loaded with fresh blueberries." onclick="selectDish(this)">
+                </div>
+            </article>
+        </section>
+
+        <aside id="dish-details">
+            <h3>Selected Dish:</h3>
+            <p id="dish-name"></p>
+            <p id="dish-description"></p>
+            <p id="dish-price"></p>
+        </aside>
+
+        <a href="mealplan.html">Create Your Meal Plan</a>
+    </main>
+</body>
+</html>

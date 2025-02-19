@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="mealplan.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Build Your Meal Plan</h1>
+        <a href="index.html">Back to Recommendations</a>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Available Dishes</h2>
+            <ul id="dish-list">
+                
+                <!-- Jimmy John's -->
+                <li data-name="Italian Night Club" data-price="8.99">Italian Night Club - $8.99 <button onclick="addToMeal(this)">Add</button></li>
+                <li data-name="Turkey Tom" data-price="7.99">Turkey Tom - $7.99 <button onclick="addToMeal(this)">Add</button></li>
+                <li data-name="J.J. Gargantuan" data-price="10.99">J.J. Gargantuan - $10.99 <button onclick="addToMeal(this)">Add</button></li>
+
+                <!-- New York Pizza -->
+                <li data-name="Cheese Pizza" data-price="3.50">Cheese Pizza - $3.50 <button onclick="addToMeal(this)">Add</button></li>
+                <li data-name="Pepperoni Pizza" data-price="3.99">Pepperoni Pizza - $3.99 <button onclick="addToMeal(this)">Add</button></li>
+                <li data-name="Garlic Knots" data-price="4.99">Garlic Knots - $4.99 <button onclick="addToMeal(this)">Add</button></li>
+
+                <!-- Tate Street Coffee House -->
+                <li data-name="Latte" data-price="4.50">Latte - $4.50 <button onclick="addToMeal(this)">Add</button></li>
+                <li data-name="Bagel Sandwich" data-price="6.99">Bagel Sandwich - $6.99 <button onclick="addToMeal(this)">Add</button></li>
+                <li data-name="Blueberry Muffin" data-price="3.50">Blueberry Muffin - $3.50 <button onclick="addToMeal(this)">Add</button></li>
+            </ul>
+        </section>
+
+        <section id="meal-plan">
+            <h2>Your Meal Plan</h2>
+            <ul id="selected-meals"></ul>
+            <p>Total: $<span id="total-cost">0.00</span></p>
+        </section>
+    </main>
+</body>
+</html>

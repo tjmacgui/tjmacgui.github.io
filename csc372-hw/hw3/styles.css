@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 20px;
+}
+
+.dish-gallery img {
+    width: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dish-gallery img.selected {
+    width: 200px;
+}
+
+#dish-details {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
