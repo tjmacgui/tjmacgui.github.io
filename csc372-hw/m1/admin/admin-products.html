@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Product Listing</title>
+  <link rel="stylesheet" href="../styles/admin.css">
+</head>
+<body>
+
+  <header>
+    <h1>stuff shop admin</h1>
+    <nav>
+      <ul>
+        <li><a href="admin-upload.html">bulk upload</a></li>
+        <li><a href="admin-products.html" style="text-decoration: underline;">products</a></li>
+        <li><a href="#">sign out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>All Products</h2>
+    <section class="product-filter">
+      <form action="#" method="get">
+        <label for="productSearch">Search products:</label>
+        <input type="text" id="productSearch" name="productSearch" placeholder="name or category">
+        <button type="submit">filter</button>
+      </form>
+    </section>
+    <button onclick="window.location.href='product-edit.html';">+ add new product</button>
+    <section class="product-listing">
+      <table>
+        <thead>
+          <tr>
+            <th>product id</th>
+            <th>name</th>
+            <th>description</th>
+            <th>category</th>
+            <th>image path</th>
+            <th>price</th>
+            <th>actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>100</td>
+            <td>product 1</td>
+            <td>short description</td>
+            <td>Category1</td>
+            <td>images/product1.jpg</td>
+            <td>$9.99</td>
+            <td>
+              <button>Edit</button>
+              <button>Delete</button>
+              <button>Archive</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 stuff shop admin panel</p>
+  </footer>
+
+</body>
+</html>

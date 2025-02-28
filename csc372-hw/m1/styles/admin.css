@@ -1,0 +1,121 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    color: #333;
+  }
+  
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav li {
+    display: inline-block;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  h2 {
+    margin-top: 0;
+    color: #444;
+  }
+  
+  form {
+    margin: 1rem 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="file"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+  }
+  
+  .product-filter {
+    margin: 1rem 0;
+  }
+  
+  .product-filter form {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .product-listing table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+    background-color: #fff;
+  }
+  
+  .product-listing th,
+  .product-listing td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  .product-listing th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  

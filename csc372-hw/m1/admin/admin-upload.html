@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Bulk Upload</title>
+  <link rel="stylesheet" href="../styles/admin.css">
+</head>
+<body>
+
+  <header>
+    <h1>stuff shop admin</h1>
+    <nav>
+      <ul>
+        <li><a href="admin-upload.html" style="text-decoration: underline;">bulk upload</a></li>
+        <li><a href="admin-products.html">products</a></li>
+        <li><a href="#">sign out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Bulk Product Upload</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <label for="bulkFile">Select file to upload:</label>
+      <input type="file" id="bulkFile" name="bulkFile" accept=".json, .csv, .txt" />
+      <button type="submit">upload</button>
+    </form>
+    <section class="upload-instructions">
+      <h3>Example JSON format:</h3>
+      <pre>
+[
+  {
+    "productId": 100,
+    "name": "Sample Product 1",
+    "description": "Short description",
+    "category": "Category1",
+    "imagePath": "images/product1.jpg",
+    "price": 9.99
+  },
+  {
+    "productId": 101,
+    "name": "Sample Product 2",
+    "description": "Another description",
+    "category": "Category2",
+    "imagePath": "images/product2.jpg",
+    "price": 19.99
+  }
+]
+      </pre>
+      <p>Please ensure your file follows the format shown above.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 stuff shop admin panel</p>
+  </footer>
+
+</body>
+</html>
