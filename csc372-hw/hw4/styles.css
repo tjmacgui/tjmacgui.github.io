@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 1em;
+}
+
+section {
+  margin: 1em 0;
+}
+
+#player-choices {
+  display: flex;
+  justify-content: center;
+}
+
+.choice {
+  width: 80px;
+  cursor: pointer;
+  margin: 0 1em;
+}
+
+.selected {
+  outline: 3px solid #007BFF;
+  outline-offset: -4px;
+}
+
+#computer-image {
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+#outcome-text {
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+#reset-button {
+  margin-top: 1em;
+  padding: 0.4em 1em;
+  cursor: pointer;
+}
