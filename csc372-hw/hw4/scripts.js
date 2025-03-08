@@ -28,11 +28,11 @@ choices.forEach(choice => {
     choices.forEach(c => c.classList.remove('selected'));
     choice.classList.add('selected');
     let n = 0, interval = setInterval(() => {
-      cImg.src = 'images/' + randThrow() + '.png';
+      cImg.src = 'images/' + randThrow() + '.PNG';
       if (++n === 6) {
         clearInterval(interval);
         let final = randThrow();
-        cImg.src = 'images/' + final + '.png';
+        cImg.src = 'images/' + final + '.PNG';
         decide(choice.getAttribute('data-throw'), final);
       }
     }, 500);
@@ -43,5 +43,5 @@ rBtn.addEventListener('click', () => {
   wSpan.textContent = w; lSpan.textContent = l; tSpan.textContent = t;
   out.textContent = 'make your move!';
   choices.forEach(c => c.classList.remove('selected'));
-  cImg.src = 'images/question-mark.png';
+  cImg.src = 'images/question-mark.PNG';
 });
