@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background: #24292e;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  #search-form {
+    margin-top: 1rem;
+  }
+  
+  #search-form input {
+    padding: 0.5rem;
+    width: 200px;
+  }
+  
+  #search-form button {
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+  /* Gallery */
+  #gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  /* Repo Card */
+  .repo-card {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 4px;
+    width: 300px;
+  }
+  
+  .repo-card h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .repo-card p {
+    margin: 0.25rem 0;
+  }
+  
+  .repo-card a {
+    color: #0366d6;
+    text-decoration: none;
+  }
+  .repo-card a:hover {
+    text-decoration: underline;
+  }
+  
